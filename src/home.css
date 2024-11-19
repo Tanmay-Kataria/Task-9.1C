@@ -1,0 +1,52 @@
+/* Home container to center content */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3a3a3a;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Title Styling */
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #457cb7;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Subtitle Styling */
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #4f86b7;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.explore-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.explore-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}

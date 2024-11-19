@@ -1,0 +1,54 @@
+/* Success Transaction Container */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e7f7e5; /* Light green background */
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Success Title */
+  .success-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #28a745; /* Green color */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Success Message */
+  .success-message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Return Button */
+  .return-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .return-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .return-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
