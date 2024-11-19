@@ -2,10 +2,12 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import './PricingPlans.css'
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY); // Publishable Key
+//https://docs.stripe.com/checkout/embedded/quickstart?lang=node&client=react
+const stripePromise = loadStripe('pk_test_51QFipqC5WzPzDwzDLOfPksc6CMtGOSue0KsGRrrIO1hVaqUMghyIGG6q6qMZ2NvhgztGAUK71Ih0N4d5CxMKVK5y00dFmbS4cx'); // Publishable Key
 
 const PricingPlans = () => {
   const handleCheckout = async (priceId) => {
+    // eslint-disable-next-line no-unused-vars
     const stripe = await stripePromise;
 
     const response = await fetch("http://localhost:4000/create-checkout-session", {
@@ -33,7 +35,7 @@ const PricingPlans = () => {
             <li>Basic Access</li>
             <li>Basic Customer Support</li>
           </ul>
-          <button className="select-plan-btn">Select Free Plan</button>
+          <button className="select-plan-btn">Free Plan Selected</button>
         </div>
 
         <div className="card premium">
@@ -49,7 +51,7 @@ const PricingPlans = () => {
           </ul>
           <button
             className="select-plan-btn"
-            onClick={() => handleCheckout("price_1QFjNRC5WzPzDwzDpwkbHYHt") }
+            onClick={() => handleCheckout("price_1QFjNRC5WzPzDwzDpwkbHYHt")}
           >
             Subscribe to Premium
           </button>
